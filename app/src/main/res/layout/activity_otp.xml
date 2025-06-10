@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+
+    <ImageView
+        android:layout_width="200dp"
+
+        android:layout_height="200dp"
+        android:src="@drawable/pin"
+        android:padding="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Otp is Send to your entered mobile number.."
+        android:layout_margin="20dp"
+        />
+    <!-- OTP Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:hint="Enter OTP">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otpField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:importantForAccessibility="yes"
+            android:contentDescription="OTP Input Field"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Verify Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@android:color/white"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Verify OTP Button"/>
+
+    <!-- ProgressBar (Visible while verifying OTP) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.AgeWell" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Make status bar transparent -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Optional: If you want the toolbar to have no color, you can set it to transparent -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AgeWellSuper" parent="Base.Theme.AgeWell">
+        <item name="colorPrimary">#0D9488</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- This line makes status bar icons dark -->
+    </style>
+
+</resources>

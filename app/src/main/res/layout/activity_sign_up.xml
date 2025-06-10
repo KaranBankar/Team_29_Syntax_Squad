@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:fadeScrollbars="true"
+    android:scrollbarSize="0dp"
+    android:scrollbars="none"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/suser"
+            app:tint="@color/primary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textAlignment="center"
+
+
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="30dp"
+            android:textFontWeight="600"
+
+            android:fontFamily="sans-serif-condensed"
+
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join us to start your wellness journey"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif"
+            android:layout_margin="5dp"
+            />
+    <!-- Name Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:drawableTint="@color/gray"
+         >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/nameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:drawableLeft="@drawable/sperson"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:paddingStart="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Mobile Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobileInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:drawableLeft="@drawable/stelephone"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:maxLength="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Age Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:drawableLeft="@drawable/calendar"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="10dp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Gender Field with Dropdown -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Gender"
+            app:startIconDrawable="@drawable/sperson"
+
+            app:endIconMode="dropdown_menu"
+            android:drawableTint="@color/gray"
+            android:paddingVertical="4dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/genderField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:paddingStart="48dp"
+                android:textSize="16sp"
+                android:background="?android:attr/editTextBackground"
+                android:inputType="none"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Location Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locationInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locationField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+
+            android:drawableLeft="@drawable/slocation"
+            android:drawablePadding="10dp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableLeft="@drawable/slock"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/gray"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:layout_gravity="start"
+            android:padding="8dp"/>
+
+    <!-- Sign Up Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AgeWellSuper"
+        android:text="Sign Up"
+        android:gravity="center"
+        app:cornerRadius="16dp"
+        app:iconGravity="start"
+        android:textSize="20dp"
+        android:drawableRight="@drawable/slogin"
+        android:drawableTint="@color/white"
+        android:paddingHorizontal="100sp"
+        android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ? Login"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/primary"
+            android:backgroundTint="#FFFFFF"
+            android:padding="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</ScrollView>

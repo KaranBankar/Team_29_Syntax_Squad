@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Age Well</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string name="hint_text">a</string>
+    <string name="aboutapp"><![CDATA[Welcome to AgeWell! \n🌟 Your companion for a healthier and happier life as you age. Our app is designed to support older adults with easy-to-use features that help you stay active, healthy, and connected. 🧑‍🦳💪\n\nFeatures:\n\nPersonalized Exercise Plans : Get daily exercise routines based on your age, weight, and fitness level.\n\nHealth Monitoring ❤️: Track important health metrics and set reminders for medications and doctor visits.\n\nMedication & Emergency Alerts : Never miss a dose! Get timely reminders for your medications and emergency contacts.\n\nStay Connected : Connect with family and friends, share moments, and stay social.\nDaily Tips & Motivation : Receive helpful tips and positive messages every day.\n\nEasy to Use 📱: Simple, accessible design with larger text and easy navigation.\nAgeWell is here to help you age gracefully and live your best life! 😊]]></string>
+    <string name="secure_private"><![CDATA[Secure & Private]]></string>
+
+    <string-array name="recurrence_options">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+
+    </string-array>
+    <string-array name="reminder_options">
+        <item>None</item>
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+        <item>1 day before</item>
+        <item>1 week before</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/input_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/doc_name2"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/gray"
+            android:hint="Doctor Name"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/input_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/doc_name"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/gray"
+            android:hint="Appointment Type"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableTint="@color/gray"
+        android:drawablePadding="10dp"
+        android:hint="Select Date"
+        android:textColorHint="@color/gray"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@drawable/clock"
+        android:drawableTint="@color/gray"
+        android:hint="Select Time"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/gray"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

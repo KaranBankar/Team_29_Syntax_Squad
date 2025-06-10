@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "243302258780",
+    "project_id": "age-well-b177c",
+    "storage_bucket": "age-well-b177c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243302258780:android:84bb31b4bc37d444d92e99",
+        "android_client_info": {
+          "package_name": "com.chaitany.agewell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBendBgrMa2hf7wb99AHWgBu9_WlGxtbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

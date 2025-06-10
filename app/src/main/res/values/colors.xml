@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="primary">#0D9488</color>
+    <color name="secondary">#400D9488</color>
+    <color name="primarybg">#F0FDFA</color>
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="teal_50">#F0FDFA</color>
+    <color name="teal_600">#0D9488</color>
+    <color name="lightGreen">#E0F2F1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary_light">#400D9488</color>
+    <color name="underweight">#FFF9C4</color>
+    <color name="normal">#C8E6C9</color>
+    <color name="overweight">#FFCCBC</color>
+    <color name="obese">#FFCDD2</color>
+    #
+
+
+
+
+
+        <color name="primary_dark">#0D6D65</color>
+        <color name="accent">#03DAC5</color>
+
+        <color name="blue">#1E40AF</color>
+        <color name="blue_light">#DBEAFE</color>
+        <color name="green">#15803D</color>
+        <color name="green_light">#DCFCE7</color>
+        <color name="red">#DC2626</color>
+        <color name="red_light">#FEE2E2</color>
+        <color name="gray">#4B5563</color>
+        <color name="gray_light">#F3F4F6</color>
+
+
+
+
+        <color name="mint">#0D9488</color>
+        <color name="mint_light">#F0FDFA</color>
+        <color name="warning">#D97706</color>
+        <color name="warning_light">#FEF3C7</color>
+        <color name="info">#2563EB</color>
+        <color name="info_light">#DBEAFE</color>
+        <color name="text_primary">#111827</color>
+        <color name="text_secondary">#6B7280</color>
+
+
+
+</resources>

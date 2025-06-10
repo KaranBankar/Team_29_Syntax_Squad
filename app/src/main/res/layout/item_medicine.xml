@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    app:strokeWidth="1dp"
+    android:outlineSpotShadowColor="@color/primary"
+    android:outlineAmbientShadowColor="@color/secondary"
+    app:strokeColor="@color/gray">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/white">
+
+        <!-- Top Section: Medicine Name and Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Medicine Name -->
+                <TextView
+                    android:id="@+id/tvMedicineName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Name"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937" />
+
+                <!-- Dosage -->
+                <TextView
+                    android:id="@+id/tvDosage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500mg tablets"
+                    android:textSize="16sp"
+                    android:textColor="#6B7280"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Action Icons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit"
+                    android:contentDescription="Edit"
+                    android:layout_marginEnd="16dp"
+                    app:tint="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_delete"
+                    android:contentDescription="Delete"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Stock Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock Remaining"
+                android:textSize="16sp"
+                android:textColor="#374151"/>
+
+            <TextView
+                android:id="@+id/tvStockValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20 tablets"
+                android:textSize="16sp"
+                android:textColor="#10B981"
+                android:textStyle="bold"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- Schedule Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Schedule"
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:layout_marginRight="40dp"/>
+
+            <!-- Schedule Times -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:singleSelection="false"
+                app:chipSpacing="12dp">
+
+                <!-- Chips will be added dynamically, but here's the styling they should use -->
+                <!-- Morning -->
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    app:chipIcon="@android:drawable/ic_menu_recent_history"
+                    app:chipBackgroundColor="#E8F5E9"
+                    app:chipStrokeColor="#10B981"
+                    app:chipStrokeWidth="1dp"
+                    app:textEndPadding="12dp"
+                    app:textStartPadding="12dp"/>
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+
+        <!-- Meal Times -->
+        <TextView
+            android:id="@+id/tvMealTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Before Breakfast"
+            android:textSize="16sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

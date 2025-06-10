@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/empty_shape"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="@color/primarybg"
+    android:elevation="4dp"
+
+    android:gravity="center_vertical">
+
+    <!-- User's Name -->
+    <TextView
+        android:id="@+id/feedback_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="User  Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback :"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="8dp" />
+    <!-- Feedback Comment -->
+    <TextView
+        android:id="@+id/feedback_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is an amazing app, I loved it!"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Rating Star View -->
+    <com.chaitany.agewell.StarRatingView
+        android:id="@+id/feedback_star_rating"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp" />
+
+   <View
+
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/primary"
+       ></View>
+
+
+</LinearLayout>

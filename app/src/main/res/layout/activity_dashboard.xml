@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/miana"
+        android:background="#F3F4F6"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="@drawable/empty_shape"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/empty_shape"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/menubars"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/ic_menu"
+                        android:tint="@color/primary" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:paddingBottom="24dp">
+
+                        <LinearLayout
+                            android:id="@+id/text_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hi, Alex Johnson"
+                                android:textColor="@color/primary"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Your Health Companion.!"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/meta"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginEnd="5dp"
+
+                                android:backgroundTint="@color/gray_800"
+
+                                android:src="@drawable/meta" />
+
+                            <ImageView
+                                android:id="@+id/user_png_dot"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/img_oldman" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Today's Task -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="#ffff"
+
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/morningTasksLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/empty_shape"
+
+                    android:backgroundTint="#88E6FFFA"
+                    android:gravity="center_vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/sun" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+
+                        android:drawableTint="@color/gray_500"
+                        android:drawableEnd="@drawable/down_icon"
+                        android:text="Morning Tasks"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/afternoonTasksLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/empty_shape"
+                    android:backgroundTint="#BBFFF7ED"                        android:gravity="center_vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:tint="@color/warning"
+                        android:src="@drawable/afternoon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+
+                        android:drawableTint="@color/gray_500"
+                        android:drawableEnd="@drawable/down_icon"
+                        android:text="Afternoon Tasks"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nightTasksLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/empty_shape"
+                    android:backgroundTint="#EEF2FF"                        android:gravity="center_vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:tint="@color/blue"
+                        android:src="@drawable/moon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+
+                        android:drawableTint="@color/gray_500"
+                        android:drawableEnd="@drawable/down_icon"
+                        android:text="Night Tasks"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Quick Access -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Access"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="4dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:background="#ffff"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/layout_emergency_contact"
+                android:layout_rowWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:backgroundTint="#16FF0000"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/telephone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Contacts"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Quick access to help"
+
+
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_medical_stock"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:backgroundTint="#2CEF3DD7"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+               >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_medical"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Stock"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track your medicines"
+                    android:textAlignment="center"
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_health_monitor"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="#3D8D33E2">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/clipboard"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checkup Schedule"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming appointments"
+                    android:textAlignment="center"
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_bmi_index"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:backgroundTint="#DFE6FFFA"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/bmi"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI Index"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track your health"
+                    android:textAlignment="center"
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </GridLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Additional Features -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Features "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffff"
+            android:padding="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:id="@+id/layout_elder_connect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="#372196F3">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/ic_elderconnect"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ElderConnect "
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:text="Connect and Share good advices"
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/layoutexercise"
+                android:layout_rowWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:backgroundTint="#2F4CAF50"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/exercising"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercise Routines"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay active and healthy"
+                    android:textColor="#6B7280"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/mealplans"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="#347DF4E8">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_meal"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meal Plans"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weakly Healthy eating Plan"
+                    android:textColor="#6B7280"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/empty_shape"
+                android:id="@+id/nearbyhospital"
+                android:layout_rowWeight="1"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="#19E60E15">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/hospital"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nearby Hospitals"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track nearby Hospitals"
+                    android:textAlignment="center"
+                    android:textColor="#6B7280"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </GridLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</ScrollView>
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/navigationView"
+android:layout_width="250dp"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+android:background="@android:color/white"
+app:menu="@menu/drawer_menu"
+app:headerLayout="@layout/nav_header" />
+    </androidx.drawerlayout.widget.DrawerLayout>
