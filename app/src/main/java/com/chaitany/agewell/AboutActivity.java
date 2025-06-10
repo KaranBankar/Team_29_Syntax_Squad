@@ -51,7 +51,7 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
     }
 
     private void setSocialMediaLinks() {
-        // Developer 1
+        // Developer 1 //Karan Bankar
         findViewById(R.id.instagram1).setOnClickListener(v -> openUrl("https://www.instagram.com/vishal_b__21/"));
         findViewById(R.id.github1).setOnClickListener(v -> openUrl("https://github.com/vishal-bhutekar21"));
         findViewById(R.id.linkedin1).setOnClickListener(v -> openUrl("https://www.linkedin.com/in/vishal-bhutekar-17552b283/"));
